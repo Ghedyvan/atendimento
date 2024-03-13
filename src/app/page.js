@@ -4,8 +4,12 @@ import UserSelect from "./components/UserSelect";
 
 export default function Home() {
   return (
-    <div className="w-full h-full flex mt-[10%] items-center flex-col">
-      <UserSelect />
-    </div>
+    <main className="bg-blue-400 w-screen h-screen flex justify-center items-center">
+      <div className="max-w-[70%] w-full h-full max-h-[70%] bg-white flex flex-col justify-start items-center rounded-3xl">
+        <div className="w-full h-full flex mt-[10%] items-center flex-col">
+          <UserSelect />
+        </div>
+      </div>
+    </main>
   );
 }
