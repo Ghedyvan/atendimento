@@ -3,6 +3,10 @@ import DashboardLayout from "./layout";
 
 export default function Dashboard() {
 
+  if (typeof window !== 'undefined') {
+    const item = localStorage.getItem('key')
+  }
+
   const sessionUser = localStorage.getItem("user");
   const user = JSON.parse(sessionUser);
   console.log("Usuário é:", user);
@@ -15,8 +19,8 @@ export default function Dashboard() {
   }
 
   return (
-    <DashboardLayout>
+
       <h1>Bem vindo {user.name}</h1>
-    </DashboardLayout>
+
   );
 }
