@@ -27,7 +27,6 @@ export default function ColaboradorForm() {
       console.log("User:", user);
       if (user) {
         console.log("User found:", user);
-
         setUserSession(user);
       } else {
         console.log("User not found");

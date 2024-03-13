@@ -7,6 +7,13 @@ export default function Dashboard() {
   const user = JSON.parse(sessionUser);
   console.log("Usuário é:", user);
 
+  if(!user) {
+    return <div className="w-screen h-screen flex justify-center items-center flex-col gap-4">
+      <h1 className="text-[36px]">Acesso restrito!</h1>
+      <p className="text-[28px]">Por favor, faça login para acessar a página</p>
+    </div>
+  }
+
   return (
     <DashboardLayout>
       <h1>Bem vindo {user.name}</h1>
