@@ -1,4 +1,4 @@
-import PacienteConfirmado from "@/app/components/PacienteConfirmado";
+import PacienteConfirmado from "../../components/PacienteConfirmado";
 import Image from "next/image";
 
 export default function Paciente() {

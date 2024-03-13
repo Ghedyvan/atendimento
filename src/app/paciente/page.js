@@ -2,6 +2,9 @@ import PacienteForm from "../components/PacienteForm";
 import Image from "next/image";
 
 export default function Paciente() {
+  if (typeof window !== 'undefined') {
+    const item = localStorage.getItem('key')
+  }
   return (
     <main className="bg-blue-400 w-screen h-screen flex justify-center items-center">
           <div className="max-w-[70%] w-full h-full max-h-[70%] bg-white flex flex-col justify-start items-center rounded-3xl">
